@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<head>
+<title>World Cup Viz</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+        <header>
+            <article class="articleLeft1">
+                <table>
+                    <tr><td class="tdTitle"><b>World Cup Visualizations</b></td></tr>
+                    <tr><td class="tdSubtitle"><b>Blog sur la coupe du monde de football</b></td></tr>
+                    <tr><td><img src="./images/Fifa-logo.png" class="imgFifa"></td></tr>
+                </table>
+            </article>
+            <article class="articleLeft2">
+                <p><b>1930</b></p>
+            </article>
+            <article class="articleMiddle">
+                <img src="./images/coupe.png">
+            </article>
+            <article class="articleRight1">
+                <p><b>2018</b></p>
+            </article>
+            <article class="articleRight2">
+                <table>
+                    <tr><td style="color:yellow;"><b>MS BigData 2020-2021</b></td></tr>
+                    <tr><td>- BENBELLA Othmane</td></tr>
+                    <tr><td>- SEMINARIO SANCHEZ Diego Roberto</td></tr>
+                    <tr><td>- TIYA DJOWE Antoine</td></tr>
+                </table>
+            </article>
+        </header>
+
+        <div class="body flex-container">
+
+            <article class="articleLeft apres">
+                <img src="./images/img1.jpg" onclick="openModal();currentSlide(1)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img2.jpg" onclick="openModal();currentSlide(2)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img3.png" onclick="openModal();currentSlide(3)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img4.jpg" onclick="openModal();currentSlide(4)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img5.jpg" onclick="openModal();currentSlide(5)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img6.jpg" onclick="openModal();currentSlide(6)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img7.jpg" onclick="openModal();currentSlide(7)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img8.jpg" onclick="openModal();currentSlide(8)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img9.jpg" onclick="openModal();currentSlide(9)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img10.jpg" onclick="openModal();currentSlide(10)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img11.jpg" onclick="openModal();currentSlide(11)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img12.jpg" onclick="openModal();currentSlide(12)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img13.jpg" onclick="openModal();currentSlide(13)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img14.jpg" onclick="openModal();currentSlide(14)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img15.jpg" onclick="openModal();currentSlide(15)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img16.jpg" onclick="openModal();currentSlide(16)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img17.jpg" onclick="openModal();currentSlide(17)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img18.jpg" onclick="openModal();currentSlide(18)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img19.jpg" onclick="openModal();currentSlide(19)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img20.jpg" onclick="openModal();currentSlide(20)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img21.jpg" onclick="openModal();currentSlide(21)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img22.jpg" onclick="openModal();currentSlide(22)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img23.jpg" onclick="openModal();currentSlide(23)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img24.jpg" onclick="openModal();currentSlide(24)" class="imgGallery hover-shadow cursor">
+
+
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                  
+                      <div class="mySlides">
+                        <img src="./images/img1.jpg" style="width:100%">
+                      </div>
+                  
+                      <div class="mySlides">
+                        <img src="./images/img2.jpg" style="width:100%">
+                      </div>
+                  
+                      <div class="mySlides">
+                        <img src="./images/img3.png" style="width:100%">
+                      </div>
+                      
+                      <div class="mySlides">
+                        <img src="./images/img4.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img5.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img6.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img7.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img8.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img9.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img10.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img11.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img12.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img13.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img14.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img15.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img16.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img17.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img18.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img19.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img20.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img21.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img22.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img23.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img24.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img25.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img26.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img27.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img28.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img29.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img30.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img31.png" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img32.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img33.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img34.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img35.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img36.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img37.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img38.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img39.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img40.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img41.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img42.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img43.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img44.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img45.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img46.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img47.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <img src="./images/img48.jpg" style="width:100%">
+                      </div>
+                      
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="articleCenter apres">
+                <h2>Introduction</h2>
+                <p>Le football est un sport qui suscite les passions. Il suffit de voir l'atmosphère qui entoure chaque rencontre entre deux équipes. 
+                    Les drapeaux dans le stade, les supporters qui célébrent, et la ville se met en couleur pour accueillir une réunion de cet événement. 
+                    Dans ce sens, la Coupe du monde est sans aucun doute la fête ultime. Les meilleures nations de football du monde se rendent dans un pays avec l'objectif remporter le trophée. 
+                    Nous présentons dans ce blog un peu d'histoire autour de cet événement.</p>
+                <h2>Histoire</h2>
+                <p> La Coupe du monde de football trouve son origine en 1904 lors de la création de la Fédération internationale de football association (FIFA) avec les Pays-Bas, la Belgique, la Suède, le Danemark, la Suisse, l'Espagne et la France comme membres. 
+                    Lors d'une première assemblée, il est décidé d'organiser une compétition internationale en Suisse. Les britanniques s'y opposent. Ce n'est qu'en 1930, sous l'impulsion de son président, Jules Rimet, que la FIFA inaugurera la première édition de la Coupe du monde de football.
+                    (Source: Wikipedia).</p>
+                <p>Cet article présente un classement des équipes ayant participé à une phase de finale de la Coupe du monde de football depuis sa création.</p>
+                <h2>Visualisations</h2>
+                <h3>1. Evolution des performances des équipes par édition</h3>
+                <p>Cette visualisation présente un histogramme dont la longueur et la couleur des barres sont fonction d'un score attribué à chaque équipe. Ce score correspond à la position occupée par l'équipe dans le classement final.
+                </p>
+                <div id="zoneVisualisation1" class="visualisation1"></div>
+                <script type="module">
+
+                    import define from "./index.js";
+                    import {Runtime, Library, Inspector} from "./runtime.js";
+                    
+                    const runtime = new Runtime();
+                    const main = runtime.module(define, Inspector.into(document.getElementById("zoneVisualisation1")));
+                </script>
+                  <table class="tbContinent">
+                    <tr>
+                      <td class="colorEurope"></td>  
+                      <td>Europe</td>
+                    </tr>
+                    <tr>
+                      <td class="colorNorthAmerica"></td>
+                      <td>North America</td>    
+                    </tr>
+                    <tr>
+                      <td class="colorSouthAmerica"></td>
+                      <td>South America</td>
+                    </tr>
+                    <tr>
+                      <td class="colorAsia"></td>
+                      <td>Asia</td>
+                    </tr>
+                    <tr>
+                      <td class="colorAfrica"></td>
+                      <td>Africa</td>
+                    </tr>
+                </table>
+                <p>Nous nous sommes appuyés sur 3 variables visuelles, à savoir la taille des barres, leurs couleurs et leurs positions.
+                    Nous avons opté pour ces choix judicieux afin de contribuer non seulement à la lisibilité du document visuel,
+                    mais aussi à son intelligibilité.
+                </p>
+                <p>La taille des barres traduit quantitativement la position occupée par chaque équipe dans le classement final au terme d'une édition. Le score est calculé à l'aide de la formule suivante:</p>
+                <div style="text-align: center; font-weight: bold;"> 100 - ( ( Classement - 1 ) * Coefficient ) ) </div>
+                <p>Le coefficient est calculé en fonction des nombres de participants dans la compétition concernée.</p>
+                <p>La couleur est utilisée comme une variable nominale. Cet attribut dépend du continent du pays concerné. </p>
+                <p>Les barres représentant les équipes les plus performantes sont placées en haut du graphe. La position des barres est donc considerée 
+                    comme étant une variable ordinale.
+                </p>  
+
+                <table class="vv1">
+                    <tr>
+                        <th>Variables Visuelles</th>
+                        <th>Quantitative</th>
+                        <th>Ordinale</th>
+                        <th>Nominale</th>
+                    </tr>
+                    <tr>
+                        <td>Taille des barres</td>
+                        <td class="td">X</td>
+                        <td class="td"></td>
+                        <td class="td"></td>
+                    </tr>
+                    <tr>
+                        <td>Couleur</td>
+                        <td class="td"></td>
+                        <td class="td"></td>
+                        <td class="td">X</td>
+                    </tr>
+                    <tr>
+                        <td>Position</td>
+                        <td class="td"></td>
+                        <td class="td">X</td>
+                        <td class="td"></td>
+                    </tr>
+                </table>
+              
+                <h3>2. Représentation de la relation entre buts marqués et encaissés </h3>
+                <p>Cette visualisation est une nuage de bulles portant en abscisse le nombre de buts marqués et 
+                  en ordonnée le nombre de buts encaissés par chaque équipe depuis la première édition de la Coupe du 
+                  Monde jusqu'en 2018. <br>
+                  La taille des bulles est fonction du nombre total de participations du pays correspondant.
+                  Et, pour chaque pays, la couleur dépend du continent auquel il appartient (même principe que la première 
+                  visualisation). <br>
+                  En pointant le curseur sur une bulle donnée, on peut lire le nom du pays, le continent de provenance,
+                  et un couple de valeurs représentant la position occupée sur le nuage (buts marqués ; buts encaissés).
+                </p>
+
+                <div id="legende" class="divLegende"></div>
+                <div id="my_dataviz" class="visualisation2"></div>
+                
+                
+                <script>
+
+                  d3.select("#legende").html("Nombre de buts encaissés")
+                                    .style("font-style","italic")
+                  .style("font-size","12px").style("font-weight","bold").style("color","black")
+                
+                // set the dimensions and margins of the graph
+                var margin = {top: 10, right: 20, bottom: 30, left: 50},
+                    width = 1000 - margin.left - margin.right,
+                    height = 400 - margin.top - margin.bottom;
+                
+                // append the svg object to the body of the page
+                var svg = d3.select("#my_dataviz")
+                  .append("svg")
+                    .attr("width", width)
+                    .attr("height", height + margin.top + margin.bottom)
+                  .append("g")
+                    .attr("transform",
+                          "translate(" + margin.left + "," + margin.top + ")");
+                
+                //Read the data
+                d3.csv("./files/wc_historic.csv").then(showData);
+                
+                function showData(data) {
+
+                  // Add X axis
+                  var x = d3.scaleLinear()
+                    .domain([0, 250])
+                    .range([ 1, width ]);
+                  svg.append("g")
+                    .attr("transform", "translate(0," + height + ")")
+                    .call(d3.axisBottom(x));
+                
+                  // Add Y axis
+                  var y = d3.scaleLinear()
+                    .domain([0, 130])
+                    .range([ height, 1]);
+                  svg.append("g")
+                    .call(d3.axisLeft(y));
+                
+                  // Add a scale for bubble size
+                  var z = d3.scaleLinear()
+                    .domain([0, 25])
+                    .range([ 3, 30]);
+                
+                  // Add a scale for bubble color
+                  var myColor = d3.scaleOrdinal()
+                    .domain(["Asia", "Europe", "North America", "South America", "Africa", "Oceania"])
+                    .range(d3.schemeSet2);
+                
+                  // -1- Create a tooltip div that is hidden by default:
+
+                  d3.select("#my_dataviz").append("p").html("Nombre de buts marqués")
+                  .style("text-align","center").style("font-style","italic")
+                  .style("font-size","12px").style("font-weight","bold")
+
+                  var tooltip = d3.select("#my_dataviz")
+                    .append("div")
+                      .style("opacity", 0)
+                      .attr("class", "tooltip")
+                      .style("background-color", "black")
+                      .style("border-radius", "5px")
+                      .style("padding", "10px")
+                      .style("color", "white")
+                
+                  // -2- Create 3 functions to show / update (when mouse move but stay on same circle) / hide the tooltip
+                  var showTooltip = function(d) {
+                    tooltip
+                      .transition()
+                      .duration(200)
+                    tooltip
+                      .style("opacity", 1)
+                      .html("Country: " + d.country + "<br>Continent: " + d.continent + "<br> (" + d.lifeExp + " ; " + d.gdpPercap + ")")
+                      .style("left", (d3.mouse(this)[0]+30) + "px")
+                      .style("top", (d3.mouse(this)[1]+30) + "px")
+                  }
+                  var moveTooltip = function(d) {
+                    tooltip
+                      .style("left", (d3.mouse(this)[0]+30) + "px")
+                      .style("top", (d3.mouse(this)[1]+30) + "px")
+                  }
+                  var hideTooltip = function(d) {
+                    tooltip
+                      .transition()
+                      .duration(200)
+                      .style("opacity", 0)
+                  }
+                
+                  // Add dots
+                  svg.append('g')
+                    .selectAll("dot")
+                    .data(data)
+                    .enter()
+                    .append("circle")
+                      .attr("class", "bubbles")
+                      .attr("cx", function (d) { return x(d.lifeExp); } )
+                      .attr("cy", function (d) { return y(d.gdpPercap); } )
+                      .attr("r", function (d) { return z(d.pop); } )
+                      .style("fill", function (d) { return myColor(d.continent); } )
+                    // -3- Trigger the functions
+                    .on("mouseover", showTooltip )
+                    .on("mousemove", moveTooltip )
+                    .on("mouseleave", hideTooltip )
+                
+                  }
+                </script>
+
+                <p>Tout comme la première, cette deuxième visualisation met en évidence 3 variables visuelles à savoir:<br>
+                  - L'aire des bulles: elle est fonction du nombre total d'apparitions dans une phase finale de la Coupe du Monde.
+                  Ainsi, le Brésil ayant le plus participé est représenté par la plus grosse bulle.<br>
+                  - La couleur: elle dépend du continent de provenance.<br>
+                  - La position: cette variable réflète les performances offensives (nombre de buts marqués) et défensives (nombre 
+                  de buts encaissés) de chaque équipe. On remarque par exemple qu'un pays comme l'Allemagne qui a encaissé 125 buts et qui a 
+                  marqué 226 buts est positionné en haut et à droite du graphe.</p>
+
+                <h3>3. Pays organisateurs</h3>
+                <p>Cette dernière visualisation permet d'afficher sur une mappemonde les pays organisateurs de la Coupe du monde de football. Le mouvement de rotation de la mappemonde permet de passer d'un pays ayant organisé une édition donnée vers le pays ayant organisé l'édition suivante. Celui-ci se distingue alors des autres par son changement de couleur (du gris vers le rouge). Les deux variables qui permettent de décrire cette visualisation sont la position sur la carte du pays organisateur et la teinte prise par ce dernier. La position et la teinte sont, dans ce cas précis, des variables nominales.</p>
+                
+                <div  style="min-height: 50px; line-height: 50px; text-align: center; margin-left: 35%; margin-right: 35%; font-weight: bold; background-color: blue; color: white"><a href="./index2.html" target="_blank">Cliquez ici pour voir la visualisation</a></div>
+                
+            </article>
+    
+            <article class="articleRight apres">
+                <img src="./images/img25.jpg" onclick="openModal();currentSlide(25)" class="imgGallery hover-shadow cursor">
+                <img src="./images/img26.jpg" onclick="openModal();currentSlide(26)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img27.jpg" onclick="openModal();currentSlide(27)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img28.jpg" onclick="openModal();currentSlide(28)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img29.jpg" onclick="openModal();currentSlide(29)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img30.jpg" onclick="openModal();currentSlide(30)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img31.png" onclick="openModal();currentSlide(31)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img32.jpg" onclick="openModal();currentSlide(32)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img33.jpg" onclick="openModal();currentSlide(33)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img34.jpg" onclick="openModal();currentSlide(34)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img35.jpg" onclick="openModal();currentSlide(35)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img36.jpg" onclick="openModal();currentSlide(36)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img37.jpg" onclick="openModal();currentSlide(37)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img38.jpg" onclick="openModal();currentSlide(38)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img39.jpg" onclick="openModal();currentSlide(39)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img40.jpg" onclick="openModal();currentSlide(40)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img41.jpg" onclick="openModal();currentSlide(41)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img42.jpg" onclick="openModal();currentSlide(42)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img43.jpg" onclick="openModal();currentSlide(43)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img44.jpg" onclick="openModal();currentSlide(44)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img45.jpg" onclick="openModal();currentSlide(45)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img46.jpg" onclick="openModal();currentSlide(46)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img47.jpg" onclick="openModal();currentSlide(47)" class="imgGallery hover-shadow cursor" >
+                <img src="./images/img48.jpg" onclick="openModal();currentSlide(48)" class="imgGallery hover-shadow cursor" >
+
+            </article>
+        </div>
+
+</body>
+
+<script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+</script>

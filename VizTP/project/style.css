@@ -1,0 +1,296 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    background-color: darkblue;
+    display: flex;
+    max-height: 500px;
+    color: white;
+}
+
+header img{
+    width: 100px;
+    height: 150px;
+    display: block;
+    margin-left: 0.5%;
+}
+
+.imgFifa {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px; width: 150px;
+}
+
+.tdTitle {
+    font-size: 25px;
+}
+
+.tdSubtitle {
+    font-size: 15px;
+    background-color: yellow;
+    color: black;
+
+}
+
+header article p{
+    font-size: 50px;
+}
+
+header .articleLeft2 {
+    margin-left: 15%;
+}
+
+header .articleRight2{
+    margin-left:auto; 
+    margin-right:0;
+    margin-top: 20px;
+}
+
+.title{
+    text-align: center;
+    font-size: 115px;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+.body {
+    display: flex;
+    color: midnightblue;
+}
+
+.body article h2 {
+    color: darkblue;
+    text-align: center;
+}
+
+.body article p{
+  text-align: justify;
+  margin-left: 7%;
+  margin-right: 7%;
+  color: black;
+}
+
+.body article h3 {
+    color: navy;
+    text-decoration: underline;
+    margin-left: 7%;
+}
+
+.imgCoupe {
+    align-content: center;
+}
+
+.imgGallery {
+    width: 170px;
+    height: 110px;
+}
+
+.body .articleLeft, .body .articleRight{
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.body .apres::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.h2Galerie{
+    text-align: center;
+}
+
+.vv1{
+  margin-bottom: 40px;
+  margin-left:auto; 
+  margin-right:auto;
+  width: 65%;
+}
+
+.tbContinent{
+  margin-top: 40px;
+  margin-left:auto; 
+  margin-right:auto;
+  width: 65%;
+  font-size: 14px;
+}
+
+.colorEurope{
+  background-image: url("./images/europe.JPG");
+}
+
+.colorAsia{
+  background-image: url("./images/Asia.JPG");
+}
+
+.colorAfrica{
+  background-image: url("./images/Africa.JPG");
+}
+
+.colorNorthAmerica{
+  background-image: url("./images/NorthAmerica.JPG");
+}
+
+.colorSouthAmerica{
+  background-image: url("./images/SouthAmerica.JPG");
+}
+
+.vv1, .vv1 th, .vv1 td{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.vv1 .td{
+    color: red;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .bubbles {
+    stroke-width: 2px;
+    stroke: white;
+  }
+  .bubbles:hover {
+    stroke: black;
+  }
+
+  .visualisation1{
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  .visualisation2{
+    margin-left: 3%;
+  }
+
+  .visualisation3{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  a:visited{
+    color: white;
+    text-decoration: none;
+  }
+
+  a:link{
+    color: white;
+    text-decoration: none;
+  }
+
+  .divLegende{
+    margin-left: 3%;
+  }
